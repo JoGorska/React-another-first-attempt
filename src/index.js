@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 // import component from a seperate file, doesn't need *.js expension, because js is default
-import MyApp from "./MyApp.js"
+import MyApp from "./components/MyApp.js"
 // functional components
 //uper case cammel case for component
 
