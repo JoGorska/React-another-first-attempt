@@ -2,9 +2,9 @@ import React from "react";
 
 function CheckListItem (props) {
     return (
-        <div>
-        <input type="checkbox"></input>
-        <label> {props.task} </label>
+        <div className="form-check">
+        <input className="form-check-input" type="checkbox" id="task"></input>
+        <label className="form-check-label" for="task"> {props.task} </label>
         </div>
     )
 }
