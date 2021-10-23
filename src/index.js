@@ -2,18 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
+// import component from a seperate file, doesn't need *.js expension, because js is default
+import MyApp from "./MyApp.js"
 // functional components
 //uper case cammel case for component
 
-function MyApp() {
-  return (
-    <ul>
-      <li>first list item</li>
-      <li>second list item</li>
-      <li>third list item</li>
-    </ul>
-    )
-};
+
 
 
 ReactDOM.render(
@@ -25,7 +19,7 @@ ReactDOM.render(
   //     <li>third list item</li>
   //   </ul>
 
-// or instead we can use functional component, that is wrapped in JSX tags, self closing component
+// or instead we can use functional component, that is wrapped in JSX tags, self closing
 
   <MyApp />,
 
