@@ -1,5 +1,11 @@
 # Getting Started with Create React App
 
+This project was written code along with the [course](https://scrimba.com/learn/learnreact) "Learn React JS" Full Course For Begginners, free Code Camp by Bob Zirrol.
+
+[Bootstrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/) was used to style this project
+
+[Bootswatch sketchy](https://bootswatch.com/sketchy/) was used to customise the look of the page.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
