@@ -4,9 +4,9 @@ import CheckListItem from "./CheckListItem"
 function MainContent () {
     return (
         <ul>
-            <CheckListItem task = "Get the rubish out"/>
-            <CheckListItem task = "Empty the dishwasher"/>
-            <CheckListItem task = "Clean kitchen tops"/>
+            <CheckListItem taskId = "task01" task = "Get the rubish out"/>
+            <CheckListItem taskId = "task02" task = "Empty the dishwasher"/>
+            <CheckListItem taskId = "task03" task = "Clean kitchen tops"/>
         </ul>
     );
 };

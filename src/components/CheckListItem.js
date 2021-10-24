@@ -3,8 +3,8 @@ import React from "react";
 function CheckListItem (props) {
     return (
         <div className="form-check">
-        <input className="form-check-input" type="checkbox" id="task"></input>
-        <label className="form-check-label" for="task"> {props.task} </label>
+        <input className="form-check-input" type="checkbox" id={props.taskId}></input>
+        <label className="form-check-label" for={props.taskId}> {props.task} </label>
         </div>
     )
 }
