@@ -18,7 +18,7 @@ function MyApp() {
       //   <li>third list item</li>
       // </ul>
    
-        <div className = "container card mb-3 shadow-lg mt-5">
+        <div className="container card mb-3 shadow-lg mt-5">
           <Header />
           <MainContent />
           <Footer />

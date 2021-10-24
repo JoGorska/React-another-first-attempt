@@ -9,13 +9,12 @@ import "./css/bootstrap-utilities.css"
 
 // import component from a seperate file, doesn't need *.js expension, because js is default
 import MyApp from "./components/MyApp.js"
-// functional components
-//uper case cammel case for component
 
 
+ReactDOM.render(<MyApp />, document.getElementById('root'));
 
+//first parameter
 
-ReactDOM.render(
   // the element that we want displayed goes here, Needs to be wrapped in one element, needs to be parent and children
   // for example:
   //   <ul>
@@ -26,10 +25,8 @@ ReactDOM.render(
 
 // or instead we can use functional component, that is wrapped in JSX tags, self closing
 
-  <MyApp />,
+// second parameter
 
-
-  // the place where it will land on the page - the div that will hold it
-  document.getElementById('root')
-);
+// document.getElementById('root')
+  // the place where it will land on the page - the div that will hold it, traditional to give it id of "root"
 
