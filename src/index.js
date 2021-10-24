@@ -1,6 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import "./css/bootstrap.css"
+import "./css/bootstrap-grid.css"
+import "./css/bootstrap-reboot.css"
+import "./css/bootstrap-utilities.css"
+
 
 // import component from a seperate file, doesn't need *.js expension, because js is default
 import MyApp from "./components/MyApp.js"

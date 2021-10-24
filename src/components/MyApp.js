@@ -17,7 +17,7 @@ function MyApp() {
       //   <li>second list item</li>
       //   <li>third list item</li>
       // </ul>
-      <div>
+      <div className = "container mt-5">
         <Header />
         <MainContent />
         <Footer />

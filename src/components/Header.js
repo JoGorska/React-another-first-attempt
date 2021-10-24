@@ -30,7 +30,7 @@ function Header () {
 
     return (
     <header>
-        <h1 style={{color: "green", backgroundColor: "black"}}>These are the tasks that need to be completed this {timeOfDay} </h1>
+        <h1 style={{color: "white", backgroundColor: "gray", textAlign: "center"}}>These are the tasks that need to be completed this {timeOfDay} </h1>
     </header>
     )
 };
