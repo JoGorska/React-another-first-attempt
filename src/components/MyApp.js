@@ -17,11 +17,13 @@ function MyApp() {
       //   <li>second list item</li>
       //   <li>third list item</li>
       // </ul>
-      <div className = "container mt-5">
-        <Header />
-        <MainContent />
-        <Footer />
-      </div>
+   
+        <div className = "container card mb-3 shadow-lg mt-5">
+          <Header />
+          <MainContent />
+          <Footer />
+        </div>
+      
       )
   };
 

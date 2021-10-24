@@ -29,9 +29,9 @@ function Header () {
     // styles is a JavaScript object and properties can be accessed with dot notation styles.color ...
 
     return (
-    <header>
-        <h1 style={{color: "white", backgroundColor: "gray", textAlign: "center"}}>These are the tasks that need to be completed this {timeOfDay} </h1>
-    </header>
+
+        <h1 className="card-header" style={{color: "white", backgroundColor: "gray", textAlign: "center"}}>These are the tasks that need to be completed this {timeOfDay} </h1>
+
     )
 };
 
