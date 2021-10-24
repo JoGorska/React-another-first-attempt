@@ -8,5 +8,6 @@ function Footer () {
     )
 };
 
+
 // direct link to the course https://scrimba.com/learn/learnreact
 export default Footer
