@@ -28,6 +28,11 @@ class MainContent extends React.Component {
                 }
                 return todo
             })
+
+            // thses consolo log are the prof that the previous state was not modified, we added new state.
+            console.log(prevState.todos)
+            console.log(updatedTodos)
+            
             return {
                 todos: updatedTodos
             }
