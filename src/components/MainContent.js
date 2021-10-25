@@ -11,10 +11,33 @@ class MainContent extends React.Component {
         this.state = {
             todos: toDoList
         }
+        // bind is needed for any method that sets the state
+        this.handleChange = this.handleChange.bind(this)
     }
 
+    // method that will set the state 
+
+    handleChange(id) {
+        this.setState(prevState => {
+            const updatedTodos = prevState.todos.map(todo => {
+                if (todo.id === id) {
+                    return {
+                        ...todo,
+                        completed: !todo.completed
+                    }
+                }
+                return todo
+            })
+            return {
+                todos: updatedTodos
+            }
+        })
+    }
+
+    // add handle change method to be passed to the component
+
     render() {
-        const itemComponentsList = this.state.todos.map(item => <CheckListItem key={item.id} item={item} />)
+        const itemComponentsList = this.state.todos.map(item => <CheckListItem key={item.id} item={item} handleChange={this.handleChange}/>)
         return (
             <div className="card-body">
                 <ul className="list-group list-group-flush mt-4 mb-4">
