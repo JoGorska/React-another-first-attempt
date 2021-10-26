@@ -1,5 +1,6 @@
 import React from "react"
 import CheckListItem from "./CheckListItem"
+import NewButton from "./NewButton"
 
 import toDoList from "../toDoList.js"
 
@@ -32,11 +33,14 @@ class MainContent extends React.Component {
             // thses consolo log are the prof that the previous state was not modified, we added new state.
             console.log(prevState.todos)
             console.log(updatedTodos)
-            
+
             return {
                 todos: updatedTodos
             }
         })
+    }
+    addNewTask () {
+        console.log("added")
     }
 
     // add handle change method to be passed to the component
@@ -49,6 +53,7 @@ class MainContent extends React.Component {
                     {itemComponentsList}
 
                 </ul>
+                <NewButton addNewTask={this.addNewTask}/>
             </div>
         );
     };
