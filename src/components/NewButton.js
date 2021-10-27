@@ -27,15 +27,13 @@ function NewButton(props) {
                 </div>
                 <div className="modal-footer">
                     <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button onClick={props.addNewTask()} type="button" className="btn btn-primary">Save changes</button>
+                    <button onClick={props.addNewTask} type="button" className="btn btn-primary">Save changes</button>
                 </div>
                 </div>
             </div>
             </div>
         </div>
 
-
-        // <button onClick={props.addNewTask()} className="btn btn-outline-secondary">Add New Task</button>
     )
 }
 

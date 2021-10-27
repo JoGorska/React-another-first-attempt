@@ -14,6 +14,7 @@ class MainContent extends React.Component {
         }
         // bind is needed for any method that sets the state
         this.handleChange = this.handleChange.bind(this)
+        this.addNewTask = this.addNewTask.bind(this)
     }
 
     // method that will set the state 
