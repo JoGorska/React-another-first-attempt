@@ -159,8 +159,8 @@ class FormNewTask extends React.Component {
                 <p>Your destination: {this.state.destination}</p>
                 <p>
                     Your dietary restrictions: 
-                    {this.state.nutsAlergy ? "Nuts Alergy" : " "}, {" "}
-                    {this.state.vegetarian ? "vegetarian" : " "}
+                    {this.state.nutsAlergy ? "Nuts Alergy" : null}, {" "}
+                    {this.state.vegetarian ? "vegetarian" : null}
                 </p>
             </main>
         )
