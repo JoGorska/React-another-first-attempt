@@ -24,6 +24,15 @@ function NewButton(props) {
                     need to add id automaticaly
                     need to add text
                     need to add completed property false
+                    <form>
+                        <input 
+                        type="text"
+                        value={props.id}
+                        name="id"
+                        placeholder="id"
+                        onChange={props.handleChangeForm} />
+                    </form>
+                    <h2>{props.id}</h2>
                 </div>
                 <div className="modal-footer">
                     <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
