@@ -11,7 +11,7 @@ class MainContent extends React.Component {
         super();
         this.state = {
             todos: toDoList,
-            id: ""
+
         }
         // bind is needed for any method that sets the state
         this.handleChange = this.handleChange.bind(this)
