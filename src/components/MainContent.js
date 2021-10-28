@@ -15,7 +15,6 @@ class MainContent extends React.Component {
         }
         // bind is needed for any method that sets the state
         this.handleChange = this.handleChange.bind(this)
-        this.addNewTask = this.addNewTask.bind(this)
         this.onSubmit = this.onSubmit.bind(this)
 
     }
@@ -42,10 +41,6 @@ class MainContent extends React.Component {
                 todos: updatedTodos
             }
         })
-    }
-    
-    addNewTask () {
-        console.log("added")
     }
 
     onSubmit(event) {
@@ -94,7 +89,7 @@ class MainContent extends React.Component {
                     {itemComponentsList}
 
                 </ul>
-                <NewButton addNewTask={this.addNewTask} onSubmit={this.onSubmit}/>
+                <NewButton onSubmit={this.onSubmit}/>
             </div>
         );
     };
