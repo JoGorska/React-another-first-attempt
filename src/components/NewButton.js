@@ -43,8 +43,9 @@ function NewButton(props) {
 
                         {/* Buttons */}
                         <div className="modal-footer">
+                            {/* data-bs-dismiss="modal" closes the modal */}
                             <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button  type="submit" className="btn btn-primary">Save New Task</button>
+                            <button  type="submit" className="btn btn-primary" data-bs-dismiss="modal">Save New Task</button>
                         </div>
                     </form>
                     {/* Form ends here */}

@@ -64,17 +64,11 @@ class MainContent extends React.Component {
 
         }
 
-        
-
         // add new task to the state, need to update todo list...
 
         this.setState(prevState => {
-            
-
-           // const todoPlusOne = prevState.todos.push(objectNewTask) this breaks map in render! ???
+                 
             const todosPlusOne = [...prevState.todos, objectNewTask]
-                
-                
 
             console.log (todosPlusOne)
 
@@ -82,6 +76,8 @@ class MainContent extends React.Component {
                 todos: todosPlusOne
             }
         })
+
+        // this stops the modal from closing. once removed, the tasks apears and disapears
         event.preventDefault()
 
 
