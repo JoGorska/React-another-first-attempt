@@ -23,6 +23,8 @@ function NewButton(props) {
                 </div>
                 <div className="modal-body">
                     <FormNewTask />
+
+                    
                 </div>
                 <div className="modal-footer">
                     <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
