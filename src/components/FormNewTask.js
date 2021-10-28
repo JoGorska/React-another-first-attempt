@@ -6,9 +6,9 @@ class FormNewTask extends React.Component {
     constructor() {
         super()
         this.state = {
-            id: 1,
+            
             text: "",
-            completed: false
+            
 
         }
         this.handleChange = this.handleChange.bind(this)
@@ -27,7 +27,9 @@ class FormNewTask extends React.Component {
         event.preventDefault()
         console.log(`event target text value ${event.target.text.value}`)
         const objectNewTask = {
+            id: 1,
             text: event.target.text.value,
+            completed: false
 
         }
         console.log(objectNewTask)

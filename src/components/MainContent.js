@@ -47,7 +47,24 @@ class MainContent extends React.Component {
         console.log("added")
     }
 
+    onSubmit(event) {
+        
+        event.preventDefault()
 
+        console.log(`event target text value ${event.target.text.value}`)
+
+        //returning an object that can be added to the tasks list, 
+        const objectNewTask = {
+
+            //need to generate unique ID every time ???
+            id: 1,
+            text: event.target.text.value,
+            completed: false
+
+        }
+        console.log(objectNewTask)
+
+    }
 
     // add handle change method to be passed to the component
 
@@ -59,7 +76,7 @@ class MainContent extends React.Component {
                     {itemComponentsList}
 
                 </ul>
-                <NewButton addNewTask={this.addNewTask}/>
+                <NewButton addNewTask={this.addNewTask} onSubmit={this.onSubmit}/>
             </div>
         );
     };
