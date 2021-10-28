@@ -16,6 +16,7 @@ class MainContent extends React.Component {
         // bind is needed for any method that sets the state
         this.handleChange = this.handleChange.bind(this)
         this.addNewTask = this.addNewTask.bind(this)
+        this.onSubmit = this.onSubmit.bind(this)
 
     }
 
@@ -49,7 +50,7 @@ class MainContent extends React.Component {
 
     onSubmit(event) {
         
-        event.preventDefault()
+        
 
         console.log(`event target text value ${event.target.text.value}`)
 
@@ -57,12 +58,32 @@ class MainContent extends React.Component {
         const objectNewTask = {
 
             //need to generate unique ID every time ???
-            id: 1,
+            id: 6,
             text: event.target.text.value,
             completed: false
 
         }
-        console.log(objectNewTask)
+
+        
+
+        // add new task to the state, need to update todo list...
+
+        this.setState(prevState => {
+            
+
+           // const todoPlusOne = prevState.todos.push(objectNewTask) this breaks map in render! ???
+            const todosPlusOne = [...prevState.todos, objectNewTask]
+                
+                
+
+            console.log (todosPlusOne)
+
+            return {
+                todos: todosPlusOne
+            }
+        })
+        event.preventDefault()
+
 
     }
 
