@@ -26,8 +26,16 @@ class FormNewTask extends React.Component {
         
     }
     
-    onSubmit() {
-        console.log("subbmited form")
+    onSubmit(event) {
+        
+        event.preventDefault()
+        console.log(`state.firstName ${event.target.firstName.value}`)
+        const objectNewTask = {
+            firstName: event.target.firstName.value,
+            lastName: event.target.lastName.value
+        
+        }
+        console.log(objectNewTask)
 
     }
 
@@ -154,7 +162,7 @@ class FormNewTask extends React.Component {
                     
                     <br />
                     
-                    <button type="submit"  >Submit</button>
+                    <button>Submit</button>
                 </form>
                 <hr />
                 <h2>Entered information:</h2>
