@@ -26,10 +26,15 @@ class FormNewTask extends React.Component {
         
     }
     
+    onSubmit() {
+        console.log("subbmited form")
+
+    }
+
     render() {
         return (
             <main>
-                <form>
+                <form onSubmit={this.onSubmit}>
                     <div className="mb-3">
                         <label className="form-label" htmlFor="firstName">First Name</label>
                         <input 
@@ -149,7 +154,7 @@ class FormNewTask extends React.Component {
                     
                     <br />
                     
-                    <button>Submit</button>
+                    <button type="submit"  >Submit</button>
                 </form>
                 <hr />
                 <h2>Entered information:</h2>

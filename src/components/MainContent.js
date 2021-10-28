@@ -16,7 +16,7 @@ class MainContent extends React.Component {
         // bind is needed for any method that sets the state
         this.handleChange = this.handleChange.bind(this)
         this.addNewTask = this.addNewTask.bind(this)
-        this.handleChangeForm = this.handleChangeForm(this)
+
     }
 
     // method that will set the state 
@@ -47,15 +47,7 @@ class MainContent extends React.Component {
         console.log("added")
     }
 
-    handleChangeForm (event) {
-        console.log("form was changed")
-        console.log(event.target)
-        // const {name, value} = event.target
-        // this.setState ({
-        //     [name]: value
-        // })
-        // console.log(this.state)
-    }
+
 
     // add handle change method to be passed to the component
 
@@ -67,7 +59,7 @@ class MainContent extends React.Component {
                     {itemComponentsList}
 
                 </ul>
-                <NewButton addNewTask={this.addNewTask} handleChangeForm={this.handleChangeForm}/>
+                <NewButton addNewTask={this.addNewTask}/>
             </div>
         );
     };
