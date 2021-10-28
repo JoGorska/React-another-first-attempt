@@ -57,8 +57,9 @@ class MainContent extends React.Component {
         //returning an object that can be added to the tasks list, 
         const objectNewTask = {
 
-            //need to generate unique ID every time ???
-            id: 6,
+            //need to generate unique ID every time a new task is added
+            // id returns number of miliseconds since 1 Jannuary 1970
+            id: Date.now(),
             text: event.target.text.value,
             completed: false
 
